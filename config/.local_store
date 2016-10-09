@@ -4200,17 +4200,15 @@
         "mmState": "clean"
     },
     "MyTestVF.page": {
-        "id": "06690000005e2ZAAAY",
-        "name": "MyTestVF",
-        "createdDate": "2016-10-09T01:44:39.000+0000",
         "createdById": "005900000037pKrAAI",
-        "namespacePrefix": null,
-        "lastModifiedById": "005900000037pKrAAI",
-        "lastModifiedDate": "2016-10-09T01:46:14.000+0000",
-        "fullName": "MyTestVF",
-        "fileName": "unpackaged/pages/MyTestVF.page",
         "createdByName": "Santanu Pal",
+        "createdDate": "2016-10-09T01:44:39.000Z",
+        "fileName": "unpackaged/pages/MyTestVF.page",
+        "fullName": "MyTestVF",
+        "id": "06690000005e2ZAAAY",
+        "lastModifiedById": "005900000037pKrAAI",
         "lastModifiedByName": "Santanu Pal",
+        "lastModifiedDate": "2016-10-09T01:46:14.000Z",
         "manageableState": "unmanaged",
         "type": "ApexPage",
         "mmState": "clean"
