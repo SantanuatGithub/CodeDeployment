@@ -1,0 +1,12 @@
+<apex:page >
+<style>
+*
+{
+background-color:black;
+background-image:none;
+color:white;
+font-style:italic;
+border:none;
+}
+</style>
+</apex:page>

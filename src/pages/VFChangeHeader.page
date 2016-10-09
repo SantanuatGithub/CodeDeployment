@@ -1,0 +1,25 @@
+<apex:page >
+
+<style type="text/css">
+    .bPageHeader  .phHeader td {background-color:blue ;}
+    
+     //h1{color:red;}
+</style>
+
+<h1>Congratulations</h1>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script>
+
+var j$ = jQuery.noConflict();
+j$(document).ready(function(){
+j$(".searchCell").hide();
+j$("#setupLink").hide();
+//j$(".menuButtonButton").hide();
+});
+</script>-->
+
+
+<!--<apex:stylesheet value="{!$Resource.headerstyle}" />-->
+
+
+</apex:page>

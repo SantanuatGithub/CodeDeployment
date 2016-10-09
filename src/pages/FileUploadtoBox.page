@@ -1,0 +1,5 @@
+<apex:page controller="BoxAccessToken">
+  <apex:form id="myForm">
+      <apex:commandButton value="Box Token" action="{!boxauthCode}" />
+  </apex:form>
+</apex:page>

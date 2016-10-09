@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <c:importvisualstrap />
+   <c:visualstrapblock >
+       <c:Panel type="primary" title="New"></c:Panel>
+   </c:visualstrapblock> 
+</apex:page>

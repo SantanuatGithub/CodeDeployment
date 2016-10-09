@@ -1,0 +1,72 @@
+<apex:page standardController="Task" extensions="CustomTaskCoontroller">
+    <style>
+        <!-- .lookupInput a{
+             display:block;
+             position: absolute;
+             top: 0px;
+         } 
+         
+         .lookupInput img{
+             float: right;
+        }
+        
+        span.lookupInput{
+            position:relative;
+            display: inherit;
+        }
+        
+        .lookupInput a, .lookupInput a{
+            border:none !important;
+            background:none !important;
+        }-->
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <c:importvisualstrap />
+   <c:visualstrapblock >
+       <c:Panel type="primary" title="Task Information">
+           <apex:form >
+           
+               <div class="form-group" >
+               
+               <label class="control-label col-sm-1" for="Assigned_TO">Assigned To</label>
+                <div class="col-sm-3">
+                   <apex:inputField value="{!Task.OwnerId}" styleClass="form-control1" id="ownerId" />
+                </div>
+               &nbsp;&nbsp;
+                <label class="control-label col-sm-1" for="Subject">Subject</label>
+                <div class="col-sm-3">
+                   <apex:inputField value="{!Task.Subject}" styleClass="form-control1" id="subjectId"/>
+                </div>
+               <br/><br/>
+                <label class="control-label col-sm-1" for="Priority">Priority</label>
+                <div class="col-sm-2">
+                   <apex:inputField value="{!Task.Priority}" styleClass="form-control input-sm" id="priorityId" required="true"/>
+                </div>
+                
+               
+                <label class="control-label col-sm-1" for="Status" style="margin-left:133.5px">Status</label>
+                <div class="col-sm-2">
+                   <apex:inputField value="{!Task.Status}" styleClass="form-control input-sm" id="statusId" required="true"/>
+                </div>
+                
+                 <br/><br/><br/>
+                <label class="control-label col-sm-1" for="Relatedto">Related To</label>
+                <div class="col-sm-2">
+                   <apex:inputField value="{!Task.WhatId}" styleClass="form-control1" id="relatedToId" />
+                </div>
+                <br/><br/><br/>
+                <label class="control-label col-sm-1">Reminder Date</label>
+                <div class="col-sm-2">
+                   <apex:inputField value="{!Task.IsReminderSet}" styleClass="form-control" id="remindersetId" /><apex:inputField value="{!Task.ReminderDateTime}" styleClass="form-control" id="reminderDateId" />
+                </div>
+               
+               <br/><br/><br/><br/>
+               
+               <apex:commandButton value="Create Task" action="{!Save}" styleClass="btn btn-success center-block"/>
+               
+              </div>
+             
+           </apex:form>
+        </c:Panel>
+   </c:visualstrapblock>
+</apex:page>

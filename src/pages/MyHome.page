@@ -1,0 +1,20 @@
+<apex:page sidebar="false" showHeader="false" controller="MyHomeController">
+ <meta name="viewport" content="width=device-width, initial-scale=2.0"/>   
+    <c:importvisualstrap /> 
+    <c:visualstrapblock >
+        <!--<apex:outputPanel styleClass="navbar navbar-inverse navbar-fixed-top" layout="block" html-role="navigation">
+        </apex:outputPanel>-->
+       
+      <div class="row-offcanvas row-offcanvas-left">
+  <div id="sidebar" class="sidebar-offcanvas">
+      <div class="col-md-12">
+      
+      </div>
+      </div>
+      </div>
+      
+       <img src="{!$Resource.Butterfly2}" class="img-circle" alt="Cinque Terre" width="170" height="170"></img>  
+        <apex:outputPanel styleClass="navbar navbar-inverse navbar-fixed-bottom" layout="block" html-role="navigation">
+        </apex:outputPanel>
+    </c:visualstrapblock>
+</apex:page>

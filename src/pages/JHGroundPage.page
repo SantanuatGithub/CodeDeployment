@@ -1,0 +1,59 @@
+<apex:page >
+
+    <style type="text/css">
+       
+        .header 
+        {
+            //width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            background: #36648B;
+            padding: 20px 30px 20px 30px;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            //text-shadow: 1px 1px 1px #FFF;
+            border:1px solid #36648B;
+            //border-radius: 25px;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        .container
+        {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3px;
+            height:380px;
+            background: #EBEBEB;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            border:1px solid #9E9E9E;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        
+        .linkContainer
+        {
+            margin-left:20px;
+            margin-top:50px;
+            font-size:15px;
+            
+            
+        }
+      
+  
+
+/*.bPageHeader .phHeader td.right {
+
+background-color:#FF0000;
+}
+.multiforce{
+color:#FF0000;
+
+}*/
+ </style>
+    
+    
+     <div class="header">
+        Interaction
+     </div>
+     <div class="container">
+     </div>
+</apex:page>

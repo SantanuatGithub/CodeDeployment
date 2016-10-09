@@ -1,0 +1,112 @@
+<apex:page standardController="Account" extensions="BackgroundController">
+
+    <style type="text/css">
+       
+        .header 
+        {
+            //width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            background: #800000;
+            padding: 20px 30px 20px 30px;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            //text-shadow: 1px 1px 1px #FFF;
+            border:1px solid #800000;
+            //border-radius: 25px;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        .container
+        {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3px;
+            height:380px;
+            background: #FFEBCD;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            border:1px solid #800000;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        
+        .tablealign
+        {
+            margin-top:50px;
+            margin-left:20px;
+        }
+        
+        table.tableCSS
+        {
+            border-width:1px;
+            border-collapse:collapse;
+            font: 14px Georgia, "Times New Roman", Times, serif;
+        }
+        
+        table.tableCSS th 
+        {
+            background-color: #2F4F4F;
+            color: white;
+            border-width: 1px;
+            padding:8px;
+            border-style:solid;
+            border-color:#000;
+        }
+        
+        table.tableCSS td
+        {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #000;
+            //background-color: #ffffff;
+        }
+        table.tableCSS tr
+        {
+            
+           background-color: #FFDEAD;
+        }
+        
+      
+       
+    </style>
+    
+     <div class="header">
+        Header Section
+     </div>
+     <div class="container">
+        <div class="tablealign">
+            <table class="tableCSS" id="alternatecolor">
+                <tr>
+                    <th>Name</th>
+                    <th>Active</th>
+                    <th>SLA</th>
+                    <th>Ownership</th>
+                    <th>Created By</th>
+                    <th>Lastmodified By</th>
+                </tr>
+                <apex:repeat value="{!acctList}" var="acctVar">
+                    <tr onmouseover="this.style.backgroundColor='#FFFFF0';" onmouseout="this.style.backgroundColor='#FFDEAD';">
+                        <td>
+                         <apex:outputField value="{!acctVar.Name}"/>    
+                        </td>
+                        <td>
+                         <apex:outputField value="{!acctVar.Active__c}"/>    
+                        </td>
+                        <td>
+                         <apex:outputField value="{!acctVar.SLA__c}"/>    
+                        </td>
+                        <td>
+                         <apex:outputField value="{!acctVar.Ownership}"/>    
+                        </td>
+                        <td>
+                         <apex:outputField value="{!acctVar.Createdby.Name}"/>    
+                        </td>
+                        <td>
+                         <apex:outputField value="{!acctVar.LastModifiedBy.Name}"/>    
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table> 
+         </div>    
+     </div>       
+</apex:page>

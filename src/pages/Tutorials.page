@@ -1,0 +1,57 @@
+<apex:page controller="TutorialController" standardStylesheets="false">
+
+    <style type="text/css">
+       
+        .header 
+        {
+            //width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            background: #800000;
+            padding: 20px 30px 20px 30px;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            //text-shadow: 1px 1px 1px #FFF;
+            border:1px solid #800000;
+            //border-radius: 25px;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        .container
+        {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3px;
+            height:380px;
+            background: #FFEBCD;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            border:1px solid #800000;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        
+        .linkContainer
+        {
+            margin-left:20px;
+            margin-top:50px;
+            font-size:15px;
+            
+            
+        }
+      
+      
+       
+    </style>
+    
+    
+     <div class="header">
+        Knowledge Sharing
+     </div>
+     <div class="container">
+         <div class="linkContainer">
+             <apex:outputLink value="/apex/GoodLookingBackGround" target="_blank" style="text-decoration:none">PageBlockTable</apex:outputLink><br/>
+             <apex:outputLink value="/apex/InnerClassTable" target="_blank" style="text-decoration:none">InnerClassTable</apex:outputLink><br/>
+             <apex:outputLink value="/apex/InnerClassTableSelection" target="_blank" style="text-decoration:none">InnerClassTableSelection</apex:outputLink><br/>
+             <apex:outputLink value="/apex/Pagination" target="_blank" style="text-decoration:none">Pagination</apex:outputLink><br/>
+         </div>
+     </div>       
+</apex:page>

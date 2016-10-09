@@ -1,0 +1,5 @@
+<apex:page showHeader="true" sidebar="true">
+	<apex:form id="myform">
+		Hello World !! Nice sublime Text1
+	</apex:form>
+</apex:page>

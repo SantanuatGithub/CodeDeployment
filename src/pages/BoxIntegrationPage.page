@@ -1,0 +1,108 @@
+<!-- 
+    Name: BoxIntegrationPage
+    Developed By: Cognizant
+    Purpose: To integrate between Salesforce and BOX to transfer files from Salesforce
+    CreatedDate: 16th June, 2016
+    Last Modified Date:
+    
+-->
+
+
+
+<apex:page controller="BoxIntegrationController" tabStyle="Account">
+    
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <apex:form id="myform">
+        <head>    
+            <apex:stylesheet value="{!URLFOR($Resource.SLDS103, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" />
+        </head>
+        <body>
+            <div class="slds"> 
+                
+                <div class="slds-box slds-theme--shade">
+                <!--<div class="slds-page-header" role="banner">-->
+                
+                   <p class="slds-text-heading--label slds-m-bottom--small">
+                        Hello {!$User.FirstName} <br/><br/>
+                        Welcome to BOX Integration with Salesforce
+                          
+                    </p> 
+                    <apex:outputPanel rendered="{!showAgreementbtn}">
+                        <div class="slds-form--inline"><apex:commandButton value="Ready To Start" styleclass="slds-button slds-button--brand" action="{!boxauthCode}"/>
+                        </div>
+                    </apex:outputPanel> 
+                </div>
+                <!--</div>-->
+                
+                <apex:outputPanel rendered="{!showUploadFileInfo}">
+                <div class="slds-page-header" role="body">
+  
+
+                
+                <div class="slds-form--horizontal">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-01">BOX Folder ID</label>
+                        <div class="slds-form-element__control">
+                            <!--<input id="text-input-01" class="slds-input" type="text" placeholder="enter boxfolderid"/>-->
+                            <apex:inputText styleClass="slds-input" value="{!folderID}"/> 
+                            
+                        </div>
+                  </div>
+                  
+                  <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-02">Attachment Query Criteria</label>
+                        <div class="slds-form-element__control">
+                            <!--<input id="text-input-02" class="slds-input" type="text" placeholder="enter filter criteria" />-->
+                            <apex:inputText styleClass="slds-input" value="{!queryString}"/> 
+                        </div>
+                  </div>
+                  
+                 <!-- <div class="slds-form-element is-required">
+                      <div class="slds-form-element__control">
+                          <label class="slds-checkbox" for="agree">
+                          <input name="default" type="checkbox" id="agree" />
+                          <span class="slds-checkbox--faux"></span>
+                          <span class="slds-form-element__label">I agree to the Terms &amp; Service</span>
+                        </label>
+                      </div>
+                  </div>
+                 --> 
+                  
+                  
+                </div>
+             <apex:commandButton value="Start to Upload" styleclass="slds-button slds-button--brand" onclick="uploadFiles();"/>   
+              <apex:actionFunction name="startToUpload" action="{!uploadFiles}" oncomplete="stopSpinner();"/>
+             
+               </div>
+               
+               <div class="slds-spinner_container">
+                   <div class="slds-spinner--brand slds-spinner slds-spinner--large" aria-hidden="false" role="alert">
+                      <div class="slds-spinner__dot-a"></div>
+                      <div class="slds-spinner__dot-b"></div>
+                   </div>
+              </div>
+              
+              </apex:outputPanel> 
+            </div>
+        </body>
+        </apex:form>
+        
+        <script>
+            
+            $(document).ready(function(){
+            
+                $('.slds-spinner_container').hide();
+            });
+            function uploadFiles(){
+                $('.slds-spinner_container').show();
+                startToUpload();
+            }
+            
+            function stopSpinner(){
+                $('.slds-spinner_container').hide();
+            }
+        </script>
+    </html>
+    
+</apex:page>

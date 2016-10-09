@@ -1,0 +1,20 @@
+<apex:page standardController="Account" renderAs="PDF">
+
+    <apex:stylesheet value="{!URLFOR($Resource.ColorPDFStyles)}"/>
+  
+     <div class="container">
+       <!--<img src="http://chart.apis.google.com/chart?chxt=y&chs=300x150&cht=gm&chd=t" />-->
+       <apex:outputField value="{!Account.Chart__c}"/>
+     </div>
+     <apex:chart height="250" width="350" data=""> 
+  <apex:pieSeries dataField="data" labelField="name"/> 
+  <apex:legend position="right"/> 
+ </apex:chart>
+    
+     <!--<div class="container">
+         <div class="linkContainer">
+          <apex:outputLink value="/apex/GoodLookingBackGround" target="_blank" style="text-decoration:none">PageBlockTable</apex:outputLink><br/>
+          <apex:outputLink value="/apex/InnerClassTable" target="_blank" style="text-decoration:none">InnerClassTable</apex:outputLink><br/>
+         </div>
+     </div> -->      
+</apex:page>

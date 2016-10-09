@@ -1,0 +1,131 @@
+<apex:page standardController="Account" extensions="InnerClassTableController">
+
+    <style type="text/css">
+       
+        .header 
+        {
+            //width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            background: #800000;
+            padding: 20px 30px 20px 30px;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            //text-shadow: 1px 1px 1px #FFF;
+            border:1px solid #800000;
+            //border-radius: 25px;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        .container
+        {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3px;
+            height:380px;
+            background: #FFEBCD;
+            font: 18px Georgia, "Times New Roman", Times, serif;
+            color: #fff;
+            border:1px solid #800000;
+            -webkit-border-radius: 10px 10px; //rounded corner
+        }
+        
+        .tablealign
+        {
+            margin-top:50px;
+            margin-left:20px;
+        }
+        
+        table.tableCSS
+        {
+            border-width:1px;
+            border-collapse:collapse;
+            font: 14px Georgia, "Times New Roman", Times, serif;
+        }
+        
+        table.tableCSS th 
+        {
+            background-color: #2F4F4F;
+            color: white;
+            border-width: 1px;
+            padding:8px;
+            border-style:solid;
+            border-color:#000;
+        }
+        
+        table.tableCSS td
+        {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #000;
+            //background-color: #ffffff;
+        }
+        table.tableCSS tr
+        {
+            
+           background-color: #FFDEAD;
+        }
+        
+      
+       
+    </style>
+    
+     <div class="header">
+        Header Section
+     </div>
+     <apex:form id="myform">
+     <div class="container">
+        <div class="tablealign">
+            <apex:outputPanel id="outputPanelId">
+            <table class="tableCSS" id="alternatecolor">
+                <tr>
+                    <th>Name</th>
+                    <th>Active</th>
+                    <th>SLA</th>
+                    <th>Ownership</th>
+                    <th>+</th>
+                    <th>-</th>
+                </tr>
+                <apex:repeat value="{!wrapperClassList}" var="acctVar">
+                    <tr onmouseover="this.style.backgroundColor='#FFFFF0';" onmouseout="this.style.backgroundColor='#FFDEAD';">
+                        <td>
+                         <apex:inputText value="{!acctVar.name}"/>    
+                        </td>
+                        <td>
+                         <apex:inputCheckbox value="{!acctVar.active}"/>    
+                        </td>
+                        <td>
+                         <apex:inputText value="{!acctVar.SLA}"/>  
+                        </td>
+                        <td>
+                         <apex:inputText value="{!acctVar.ownership}"/>    
+                        </td>
+                        <td>
+                         <apex:commandButton value="{!acctVar.addRowURL}" action="{!addRow}" reRender="outputPanelId" status="actStatusId"/>
+                        </td>
+                        <td>
+                         <apex:commandButton value="{!acctVar.removeRowURL}" action="{!removeRow}" rendered="{!showrmvButton}" reRender="outputPanelId" status="actStatusId">
+                             <apex:param value="{!acctVar.rowIndex}" name="index"/>
+                         </apex:commandButton>
+                        </td>
+                       </tr>
+                </apex:repeat>
+            </table> 
+            
+           <apex:actionstatus id="actStatusId">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" id="el_loading" style="background-color: #DCD6D6;height: 100%;opacity:0.65;width:100%;"> 
+                    <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                        <!--<apex:commandButton value="Saving..." style="width:120px" disabled="true"/>-->
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                        <span class="waitingDescription">Processing...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>
+       
+            </apex:outputPanel>
+        </div>    
+     </div>       
+      </apex:form>
+</apex:page>
