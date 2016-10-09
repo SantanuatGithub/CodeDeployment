@@ -1,0 +1,16 @@
+{
+    "projectName": "Success Project",
+    "username": "project@success.com",
+    "id": "ec1ad0a0-8d71-11e6-a83c-dfa7147c9ce7",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "D:\\Workspace\\Force.com",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
