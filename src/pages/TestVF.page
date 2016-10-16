@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true">
+	<apex:outputText Value="Hello World"/>
+</apex:page>
