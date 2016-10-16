@@ -1,0 +1,3 @@
+<design:component>
+	<design:attribute name="footer" label="Name" description="Please provider footer name" />
+</design:component>

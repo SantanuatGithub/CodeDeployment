@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"ima",
+				"background-image"
+			],
+			[
+				"out",
+				"apex:outputText"
+			],
+			[
 				"output",
 				"apex:outputPanel"
 			],
@@ -95,6 +111,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.cmp",
+			"settings":
+			{
+				"buffer_size": 169,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.auradoc",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.design",
+			"settings":
+			{
+				"buffer_size": 129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -103,17 +145,33 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 297.0,
-		"last_filter": "insta",
+		"height": 490.0,
+		"last_filter": "git",
 		"selected_items":
 		[
 			[
-				"insta",
-				"Package Control: Install Package"
+				"git",
+				"git: status"
 			],
 			[
-				"git",
-				"git: diff"
+				"pull",
+				"git: pull"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"git:st",
+				"git: status"
+			],
+			[
+				"git:remo",
+				"git: remote add"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
 				"bran",
@@ -179,14 +237,22 @@
 	[
 		"/D/Workspace/Force.com/Success Project",
 		"/D/Workspace/Force.com/Success Project/src",
-		"/D/Workspace/Force.com/Success Project/src/pages"
+		"/D/Workspace/Force.com/Success Project/src/aura",
+		"/D/Workspace/Force.com/Success Project/src/aura/LightningTemplateFooter"
 	],
 	"file_history":
 	[
-		"/D/Development/ANT_Salesforce/build.xml",
+		"/D/Workspace/Force.com/Success Project/src/aura/LightningCommunityTheme/LightningCommunityThemeController.js",
+		"/D/Workspace/Force.com/Success Project/src/aura/LightningCommunityTheme/LightningCommunityTheme.css",
+		"/D/Workspace/Force.com/Success Project/src/aura/LightningCommunityTheme/LightningCommunityTheme.cmp",
+		"/D/Workspace/Force.com/Success Project/src/pages/MyTestVF.page-meta.xml",
+		"/D/Workspace/Force.com/Success Project/src/pages/MyTestVF.page",
 		"/D/Development/ANT_Salesforce_GIT/build.xml",
 		"/D/Development/ANT_Salesforce_GIT/build.properties",
 		"/D/Development/ANT_Salesforce_GIT/retrieveSource/package.xml",
+		"/D/Development/ANT_Salesforce_GIT/retrieveTarget1/package.xml",
+		"/D/Workspace/Force.com/Success Project/src/pages/ForgotPassword.page-meta.xml",
+		"/D/Development/ANT_Salesforce/build.xml",
 		"/C/Program Files (x86)/Jenkins/jenkins.xml",
 		"/D/Development/ANT_Salesforce/build.properties",
 		"/C/Users/Santanu/AppData/Roaming/Sublime Text 3/Packages/User/mavensmate.sublime-settings",
@@ -235,6 +301,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t\n",
 			"retrieveTarget",
 			"test",
 			"works"
@@ -255,8 +322,99 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.cmp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "D:\\Workspace\\Force.com\\Success Project\\src\\aura\\LightningTemplateFooter\\LightningTemplateFooter.cmp",
+							"git_savvy.repo_path": "D:/Workspace/Force.com/Success Project",
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.auradoc",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "D:\\Workspace\\Force.com\\Success Project\\src\\aura\\LightningTemplateFooter\\LightningTemplateFooter.auradoc",
+							"git_savvy.repo_path": "D:/Workspace/Force.com/Success Project",
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/aura/LightningTemplateFooter/LightningTemplateFooter.design",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								109
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "D:\\Workspace\\Force.com\\Success Project\\src\\aura\\LightningTemplateFooter\\LightningTemplateFooter.design",
+							"git_savvy.repo_path": "D:/Workspace/Force.com/Success Project",
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -291,7 +449,15 @@
 		]
 	},
 	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 130.0
+	},
 	"output.MavensMate-OutputPanel":
+	{
+		"height": 130.0
+	},
+	"output.exec":
 	{
 		"height": 130.0
 	},
@@ -341,7 +507,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 299.0,
+	"side_bar_width": 390.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
